@@ -18,14 +18,14 @@ Given two strings `needle` and `haystack`, return the index of the first occurre
 
 2. Case 2:
 >Input:
->haystack = "leetcode"
+>haystack = "GranTurismo"
 >
->    needle = "leeto"
+>    needle = "Tour"
 >
 >Output:
 >-1
 >
->Explanation: "leeto" did not occur in "leetcode", so we return -1.
+>Explanation: "Tour" did not occur in "GranTurismo", so we return -1.
 
 ### Constraints:
 - `1 <= haystack.length, needle.length <= 10^3`
