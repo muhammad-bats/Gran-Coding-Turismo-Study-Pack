@@ -62,7 +62,7 @@ print(strStr(haystack2, needle2))  # Output: -1
 
 ---
 
-## Explanation of the Code:
+## Explanation of the Solution:
 1. **Edge Case Handling:** If the `needle` is an empty string, the function directly returns `-1`, as per the problem definition.
 
 2. **Finding the First Occurrence:** The `find` method of Python strings returns the index of the first occurrence of a substring. If the substring is not found, it returns `-1`. This method is efficient and simplifies the implementation.
