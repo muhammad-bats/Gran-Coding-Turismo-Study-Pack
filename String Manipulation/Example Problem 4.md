@@ -54,7 +54,7 @@ print(isPalindrome(s3))  # Output: False
 ```
 
 ---
-### Explanation
+## Explanation of the Solution
 
 1. **Step 1: Clean the Input String**
    - Remove all non-alphanumeric characters using `char.isalnum()`.
