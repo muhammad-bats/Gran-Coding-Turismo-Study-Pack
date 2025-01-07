@@ -68,5 +68,3 @@ print(strStr(haystack2, needle2))  # Output: -1
 2. **Finding the First Occurrence:** The `find` method of Python strings returns the index of the first occurrence of a substring. If the substring is not found, it returns `-1`. This method is efficient and simplifies the implementation.
 
 3. **Return the Result:** The function returns the index of the first occurrence or `-1` if `needle` is not found.
-
----
