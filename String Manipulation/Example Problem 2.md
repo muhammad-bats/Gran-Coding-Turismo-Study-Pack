@@ -38,7 +38,7 @@ The task is to find the index of the first occurrence of `needle` in `haystack`.
 
 Below is the Python solution with an explanation:
 
-### Python Code Solution:
+## Python Solution:
 ```python
 def strStr(haystack: str, needle: str) -> int:
     # Edge case: If needle is an empty string, return -1
@@ -62,7 +62,7 @@ print(strStr(haystack2, needle2))  # Output: -1
 
 ---
 
-### Explanation of the Code:
+## Explanation of the Code:
 1. **Edge Case Handling:** If the `needle` is an empty string, the function directly returns `-1`, as per the problem definition.
 2. **Finding the First Occurrence:** The `find` method of Python strings returns the index of the first occurrence of a substring. If the substring is not found, it returns `-1`. This method is efficient and simplifies the implementation.
 3. **Return the Result:** The function returns the index of the first occurrence or `-1` if `needle` is not found.
