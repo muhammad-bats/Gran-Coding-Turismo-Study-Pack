@@ -1,6 +1,6 @@
 # Gran Coding Turismo Study Pack
 
-Welcome to the **Gran Coding Turismo Study Pack**, your ultimate resource for mastering the programming concepts essential for the Speed Coding segment of the Beaconhouse Notion of Academia 2025. This repository is designed to help participants build a solid understanding of key programming topics, practice problem-solving skills, and prepare confidently for the competition.  
+Welcome to the **Gran Coding Turismo Study Pack**, your ultimate resource for mastering the programming concepts essential for the GCT segment of the Beaconhouse Notion of Academia 2025. This repository is designed to help participants build a solid understanding of key programming topics, practice problem-solving skills, and prepare confidently for the competition.  
 
 ## What’s Inside?  
 This repository is structured into dedicated directories for each programming concept covered in the round, ensuring an organized and focused learning experience:  
