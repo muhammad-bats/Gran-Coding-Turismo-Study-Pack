@@ -51,12 +51,12 @@ def strStr(haystack: str, needle: str) -> int:
     return index
 
 # Example usage:
-haystack1 = "sadbutsad"
-needle1 = "sad"
-print(strStr(haystack1, needle1))  # Output: 0
+haystack1 = "beaconhouse"
+needle1 = "con"
+print(strStr(haystack1, needle1))  # Output: 3
 
-haystack2 = "leetcode"
-needle2 = "leeto"
+haystack2 = "bna2025"
+needle2 = "24"
 print(strStr(haystack2, needle2))  # Output: -1
 ```
 
@@ -64,7 +64,9 @@ print(strStr(haystack2, needle2))  # Output: -1
 
 ## Explanation of the Code:
 1. **Edge Case Handling:** If the `needle` is an empty string, the function directly returns `-1`, as per the problem definition.
+
 2. **Finding the First Occurrence:** The `find` method of Python strings returns the index of the first occurrence of a substring. If the substring is not found, it returns `-1`. This method is efficient and simplifies the implementation.
+
 3. **Return the Result:** The function returns the index of the first occurrence or `-1` if `needle` is not found.
 
 ---
