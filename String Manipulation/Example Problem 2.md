@@ -9,7 +9,7 @@ Given two strings `needle` and `haystack`, return the index of the first occurre
 >Input:
 >haystack = "sadbutsad"
 >
->needle = "sad"
+>    needle = "sad"
 >
 >Output:
 >0
@@ -20,7 +20,7 @@ Given two strings `needle` and `haystack`, return the index of the first occurre
 >Input:
 >haystack = "leetcode"
 >
->needle = "leeto"
+>    needle = "leeto"
 >
 >Output:
 >-1
