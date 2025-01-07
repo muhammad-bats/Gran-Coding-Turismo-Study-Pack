@@ -45,7 +45,7 @@ def generateParentheses(n):
     return result
 
 # Example usage
-n = 3
+n = 4
 print(generateParentheses(n))
 ```
 ---
