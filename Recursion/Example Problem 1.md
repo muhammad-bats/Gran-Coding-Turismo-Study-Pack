@@ -28,7 +28,7 @@ An integer `n` is a power of two, if there exists an integer `x` such that `n ==
 >Explanation: 3 cannot be a power of 2
 
 ### Constraints
-`-2^31 <= n <= 2^31 - 1`
+`-2^31 < = n < = 2^31 - 1`
 
 ---
 ## Python Solution
