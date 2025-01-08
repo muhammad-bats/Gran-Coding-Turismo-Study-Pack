@@ -34,50 +34,45 @@ An integer `n` is a power of two, if there exists an integer `x` such that `n ==
 ## Python Solution
 ```python
 def isPowerOfTwo(n):
-    # A number is a power of two if it is greater than 0
-    # and its binary representation contains exactly one '1'.
-    return n > 0 and (n & (n - 1)) == 0
+    # Base case: 1 is a power of two (2^0)
+    if n == 1:
+        return True
+    # Base case: numbers less than 1 cannot be powers of two
+    if n <= 0:
+        return False
+    # Recursive step: check if dividing n by 2 results in another power of two
+    return n % 2 == 0 and isPowerOfTwo(n // 2)
 
 # Example Usage
-n1 = 4
-n2 = 16
-n3 = 30
-print(isPowerOfTwo(n1))  # Output: True
-print(isPowerOfTwo(n2))  # Output: True
-print(isPowerOfTwo(n3))  # Output: False
+print(isPowerOfTwo(16))  # Output: True
+print(isPowerOfTwo(4))   # Output: True
+print(isPowerOfTwo(25))   # Output: False
 ```
-
 ---
 
-## Explanation of the Solution
+### Explanation of the Solution
+1. **Base Case 1**: If \( n == 1 \), return `True` because \( 1 \) is \( 2^0 \).
+2. **Base Case 2**: If \( n \leq 0 \), return `False` because negative numbers and zero cannot be powers of two.
+3. **Recursive Step**:
+   - Check if \( n \) is divisible by 2 (\( n \% 2 == 0 \)).
+   - If \( n \) is divisible, divide \( n \) by 2 and make a recursive call to \( \text{isPowerOfTwo}(n // 2) \).
+   - Continue dividing until \( n \) becomes 1 (power of two) or is not divisible by 2.
 
-1. **Key Insight:**
-   - A number \( n \) is a power of two if and only if it is greater than 0 and its binary representation contains exactly one '1'.
-   - For example:
-     - \( 1 \) (binary: `0001`) is a power of two.
-     - \( 16 \) (binary: `10000`) is a power of two.
-     - \( 3 \) (binary: `0011`) is **not** a power of two.
+### **Example Walkthrough**
+**Input**: n = 16
+1. **First call**: n = 16
+   - `16 % 2 == 0`: True
+   - Recursive call: isPowerOfTwo(16 // 2 = 8)
+2. **Second call**: n = 8
+   - `8 % 2 == 0`: True
+   - Recursive call: isPowerOfTwo(8 // 2 = 4)
+3. **Third call**: n = 4
+   - `4 % 2 == 0`: True
+   - Recursive call: isPowerOfTwo(4 // 2 = 2)
+4. **Fourth call**: n = 2
+   - `2 % 2 == 0`: True
+   - Recursive call: isPowerOfTwo(2 // 2 = 1)
+5. **Fifth call**: n = 1
+   - Base case: `n == 1`: Return `True`.
 
-2. **Using the Bitwise Trick:**
-   - For any power of two \( n \), the expression \( n \& (n - 1) \) will always be \( 0 \).
-     - Example: \( n = 4 \) (binary: `0100`)
-       - \( n - 1 = 3 \) (binary: `0011`)
-       - \( n \& (n - 1) = 0100 \& 0011 = 0000 \)
-   - This works because subtracting 1 from \( n \) flips the least significant '1' in \( n \) and all the bits to the right of it.
-
-3. **Algorithm Steps:**
-   - Check if \( n > 0 \). Power of two numbers must be positive.
-   - Use the bitwise expression \( n \& (n - 1) == 0 \) to check if \( n \) is a power of two.
-   - Return the result.
-
-### Example Walkthroughs
-**Input**: \( n = 16 \)
-
-1. Check if \( n > 0 \): \( 16 > 0 \) (True).
-2. Calculate \( n \& (n - 1) \):
-   - Binary of \( n = 16 \): `10000`
-   - Binary of \( n - 1 = 15 \): `01111`
-   - \( 10000 \& 01111 = 00000 \)
-3. Result: \( n \& (n - 1) == 0 \) (True).
-
-**Output**: **True** (16 is a power of two).
+Result: `n = 16` is a power of two, so the function returns `True`.
