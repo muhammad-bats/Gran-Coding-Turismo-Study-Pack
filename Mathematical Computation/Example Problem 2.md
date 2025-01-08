@@ -94,7 +94,7 @@ def intToRoman(num):
 ```
 ---
 
-### Explanation of the Code
+### Explanation of the Solution
 1. **Define Roman Numeral Mapping**:
    - A list of tuples is used to map integers to their corresponding Roman numeral symbols. The list is ordered from largest to smallest values to ensure the conversion starts with the highest value.
 2. **Initialize Result String**:
