@@ -1,4 +1,4 @@
-# Example Problem: Limited Stack Implementation
+# Example Problem 2: Limited Stack Implementation
 
 ## Problem Statement
 Design a stack that supports basic stack operations like `push`, `pop`, `top`, and an additional operation to check if the stack is full.
