@@ -36,20 +36,20 @@ def singleNumber(nums):
 
 ---
 
-## Explanation of the Solution
+### Explanation of the Solution
 
 The solution uses the **bitwise XOR operation (`^`)** to find the single number. The XOR operation has the following properties:
 1. `x ^ x = 0` (Any number XORed with itself is 0).
 2. `x ^ 0 = x` (Any number XORed with 0 remains unchanged).
 3. XOR is **commutative** and **associative**, so the order of operations does not matter.
 
-### Logic:
+Logic:
 - When every number appears twice, their XOR will cancel each other out, leaving only the unique number.
 - We initialize `result = 0` and XOR every number in the array with `result`.
 - By the end of the loop, `result` will hold the single number.
 
 
-## Example Walkthrough
+### Example Walkthrough
 **Input:**
 ```python
 nums = [5, 3, 1, 3, 5]
