@@ -1,4 +1,4 @@
-# Example Problem: Next Greater Element
+# Example Problem 3: Next Greater Element
 
 ## Problem Statement
 The **next greater element** of some element `x` in an array is the **first greater** element that is **to the right of** `x` in the same array.
