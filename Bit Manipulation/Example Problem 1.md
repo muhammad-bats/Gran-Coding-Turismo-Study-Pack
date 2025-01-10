@@ -50,7 +50,7 @@ def addBinary(a, b):
 
 ---
 
-## Explanation of the Solution
+### Explanation of the Solution
 
 1. **Pointers for Strings**:
    - Two pointers, `i` and `j`, start from the last indices of `a` and `b`, respectively.
@@ -68,7 +68,7 @@ def addBinary(a, b):
    - Include a final carry if present.
 
 
-## Example Walkthrough
+### Example Walkthrough
 
 **Input:**
 
