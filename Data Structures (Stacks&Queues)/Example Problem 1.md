@@ -82,8 +82,11 @@ When popping a value, if the value matches the current minimum (the top of `min_
 The `getMin()` function simply returns the top of `min_stack`, which always holds the current minimum value.
 
 ### Example Walkthrough
-Let’s walk through an example with the input `["MinStack", "push", "push", "push", "getMin", "pop", "top", "getMin"]` and the values `[[], [-2], [0], [-3], [], [], [], []]`.
-
+**Input:** 
+```
+["MinStack", "push", "push", "push", "getMin", "pop", "top", "getMin"]
+[[], [-2], [0], [-3], [], [], [], []]
+```
 1. **`MinStack minStack = new MinStack();`**
    - Creates an empty stack object.
    - `null` output since nothing is returned.
