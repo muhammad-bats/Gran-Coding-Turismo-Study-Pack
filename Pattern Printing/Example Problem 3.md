@@ -1,5 +1,6 @@
-### Problem Statement: X-Pattern
+# EXample Problem 3: X-Pattern
 
+## Problem Statement
 given an odd integer `n`, generate an "X" pattern of size `n * n`. The diagonal lines of the "X" are formed by `*` symbols, intersecting at the center of the square.  
 
 ### Example Cases
@@ -36,7 +37,7 @@ given an odd integer `n`, generate an "X" pattern of size `n * n`. The diagonal 
 
 ---
 
-## Python Solution:
+## Python Solution
 ```python
 def print_x_pattern(n):
     # Validate input (odd and within range)
@@ -60,7 +61,7 @@ print_x_pattern(n)
 
 ---
 
-### Explanation of the Solution:
+### Explanation of the Solution
 
 1. **Input Validation:**
    - Ensure `n` is an odd integer within the valid range `1 < = n < = 49`.
@@ -78,7 +79,7 @@ print_x_pattern(n)
    - After printing each row, move to the next line.
 
 
-### Example Walkthrough:
+### Example Walkthrough
 
 **Input:**
 ```
