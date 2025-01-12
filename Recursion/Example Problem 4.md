@@ -1,4 +1,4 @@
-# Example Problem 4: Dcode String
+# Example Problem 4: Decode String
 
 ## Problem Statement
 Given an encoded string, return its decoded string.
